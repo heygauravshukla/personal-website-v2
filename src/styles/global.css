@@ -19,3 +19,23 @@
   --font-sans: 'Inter', sans-serif;
   --font-sans--font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
 }
+
+@layer base {
+  html {
+    @apply scroll-smooth antialiased scheme-dark;
+  }
+
+  body {
+    @apply bg-slate-900 leading-relaxed text-slate-400;
+  }
+
+  @view-transition {
+    navigation: auto;
+  }
+}
+
+@layer components {
+  .wrapper {
+    @apply mx-auto max-w-5xl px-4 md:px-6;
+  }
+}
