@@ -14,6 +14,7 @@
 }
 
 @import 'tailwindcss';
+@plugin "@tailwindcss/typography";
 
 @theme {
   --font-sans: 'Inter', sans-serif;
